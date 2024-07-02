@@ -118,6 +118,13 @@ class _ListReviewPageState extends State<ListReviewPage> {
                 ),
                 Row(
                   children: [
+                    if (!isMyReview)
+                      TextButton(
+                        onPressed: () {
+                          // Add follow functionality here
+                        },
+                        child: Text('Follow', style: TextStyle(color: Colors.black)),
+                      ),
                     IconButton(
                       icon: Icon(Icons.share, color: Colors.black),
                       onPressed: () {
